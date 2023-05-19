@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Bad+Script&family=Courgette&family=Dancing+Script:wght@500&family=Pacifico&family=Raleway:ital,wght@0,100;0,300;0,500;1,300;1,500&family=Roboto:wght@300;400;500&family=Solitreo&family=Unbounded&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(209, 194, 194);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  grid-area: nav;
+  background-color: rgb(25, 25, 99);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+aside {
+  grid-area: aside;
+  margin-left: 1rem;
+  padding: 0;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+main {
+  grid-area: main;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto;
+  display: grid;
+  padding: 0.5rem;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(25, 25, 99);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.productos {
+  display: flex;
+  padding: 0.5rem;
+  
+}
+
+.productos:hover {
+  color: rgb(86, 63, 185);
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  margin: 0.5rem;
+  
+}
+
+.card img {
+  width: 20rem;
+
+}
+
+.card button {
+  background-color: rgb(25, 25, 99);
+  padding: 0.7rem;
+  width: 24rem;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  transition: ease-in .4s;
+}
+
+.card h2,
+p {
+  margin-top: 1rem;
+}
+
+.card:hover {
+  color: rgb(86, 63, 185);
+  cursor: pointer; box-shadow: 0 0 90px;
+  transition: transform 4s, ease-in-out 0.1s;
+  transform: scale(1.2);
+
+  
+}
+
+button:hover {
+  color: rgb(15, 14, 14);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr 1fr;
+  
+}
+
+footer:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.grid4-container {
+  display: grid;
+  grid-template-areas:
+    "nav nav "
+    "aside main "
+    "footer footer";
+  height: 100vh;
+  grid-template-columns: 15% auto;
+  grid-template-rows: 10% auto 10%;
+}
